@@ -8,9 +8,6 @@
 
 
 
-
-
-
 import re
 from string import Template
 
@@ -184,6 +181,18 @@ class XMLBIFReader(object):
         variable_property = {variable.find('NAME').text: [property.text for property in variable.findall('PROPERTY')]
                              for variable in self.network.findall('VARIABLE')}
         return variable_property
+
+
+
+
+
+
+
+
+
+
+
+
 
 class BIFReader(object):
 
