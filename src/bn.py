@@ -95,6 +95,7 @@ def enumeration_ask(X,E,e,bn):
         bn.update(X,val)
         bn.reset_completed_nodes()
         Q[val] = enumerate_all(bn)
+    print(Q)
     return normalize(Q,bn.nodes[X].states)
 
 def enumerate_all(bn):

@@ -25,7 +25,6 @@ add_on = 0
 if len(sys.argv) / 2 == float(len(sys.argv)//2): # if even
 	add_on = 1
 	
-	
 
 E = []
 e = []
@@ -40,9 +39,9 @@ net = bn.Bayesian_Network(reader.get_variables(),reader.get_parents(),reader.get
 
 if add_on == 1:
 	estimated = bn.likelihood_weighting(sys.argv[3],E,e,net,int(sys.argv[2]))
-	print('Estimate: ',estimated)
+	print(estimated)
 
 else: 
 	actual = bn.enumeration_ask(sys.argv[2],E,e,net)
-	print('Actual: ',actual)
+	print(actual)
 
