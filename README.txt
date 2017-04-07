@@ -27,6 +27,8 @@ i.e. if you run the first example below you may get either:
 
 3) If you'd like to use some of the built-in examples simply specify the relative path like in the 4th example below.
 
+4) Please note I did not include a "classNames.txt" file as the inference algorithms I implemented aren't directly callable. There's a bit of wrangling that needed to be done b/c of the XMBLIF and BIF parsers and so the only way to run the functions is from the 'main.py' file in the aforementioned way. Sorry for any troubles on your part. 
+
 ##############################################################################################
 
 Examples: 
